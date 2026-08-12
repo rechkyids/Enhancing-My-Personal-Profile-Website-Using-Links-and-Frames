@@ -7,7 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         emailjs.init({
-            publicKey: "d2qtMLP2W8dQh0WOk"});
+            publicKey: "d2qtMLP2W8dQh0WOk"}
+    );
     </script>
 </head>
 <body>
@@ -78,24 +79,14 @@
             emailjs.sendForm(
                 "service_pjh0uuc",
                 "template_hwwchig",
-                this
-            )
-            .then(function() {
-
-                alert("Message sent successfully!");
-
+                this)
+            .then(function() {alert("Message sent successfully!");
                 document.getElementById("contact-form").reset();
-
             })
             .catch(function(error) {
-
                 alert("Message failed to send. Please try again.");
-
                 console.error("EmailJS Error:", error);
-
             });
-
-        });
     </script>
 </body>
 </html>

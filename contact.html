@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Me</title>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
     <script>
         emailjs.init({
-            publicKey: "d2qtMLP2W8dQh0WOk"});
+            publicKey: "egjOQc-7p4HJyyZBq"
+        });
     </script>
 </head>
+
 <body>
+
     <h1>Contact Me</h1>
+
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About Me</a> |
-        <a href="hobbies.html">Hobbies</a> |
-        <a href="favorites.html">Favorites</a> |
-        <a href="goals.html">Goals</a> |
-        <a href="contact.html">Contact Me</a> |
+        <a href="About me.html">About me</a> |
+        <a href="Hobbies.html">My hobbies</a> |
+        <a href="Goals.html">My goals</a> |
+        <a href="Favorites.html">My Favorites</a> |
+        <a href="contact.html">Contact Me</a>
     </nav>
+
     <hr>
+
     <form id="contact-form">
         <label for="name">Full Name:</label>
         <input
@@ -28,7 +36,9 @@
             id="name"
             name="name"
             placeholder="Enter your name"
-            required>
+            required
+        >
+
         <br><br>
         <label for="email">Gmail:</label>
         <input
@@ -36,19 +46,23 @@
             id="email"
             name="email"
             placeholder="Enter your Gmail"
-            required>
+            required
+        >
+
         <br><br>
         <label>Gender:</label>
         <br>
+
         <input type="radio" id="male" name="gender" value="Male" required>
         <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="Female">
         <label for="female">Female</label>
         <input type="radio" id="other" name="gender" value="Other">
         <label for="other">Other</label>
+
         <br><br>
-        <!-- Strand -->
         <label for="strand">Strand:</label>
+
         <select id="strand" name="strand" required>
             <option value="">Select Strand</option>
             <option value="ICT">ICT</option>
@@ -57,41 +71,56 @@
             <option value="GAS">GAS</option>
             <option value="HUMSS">HUMSS</option>
         </select>
+
         <br><br>
         <label for="message">Message:</label>
         <br>
+
         <textarea
             id="message"
             name="message"
             rows="5"
             cols="50"
             placeholder="Type your message here..."
-            required>
-            </textarea>
+            required
+        ></textarea>
+
         <br><br>
+
         <button type="submit">Send Message</button>
         <button type="reset">Clear Form</button>
+
     </form>
+
     <script>
-        document.getElementById("contact-form").addEventListener("submit", function(event){
+        const form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", function(event) {
+
             event.preventDefault();
+
             emailjs.sendForm(
-                "service_pjh0uuc",
-                "template_hwwchig",
-                this
+                "service_dllkglf",
+                "template_oe5a6f3",
+                form
             )
-            .then(function() {
+            .then(function(response) {
+
+                console.log("SUCCESS!", response.status, response.text);
 
                 alert("Message sent successfully!");
 
-                document.getElementById("contact-form").reset();
+                form.reset();
 
             })
             .catch(function(error) {
 
-                alert("Message failed to send. Please try again.");
+                console.error("EMAILJS ERROR:", error);
 
-                console.error("EmailJS Error:", error);
+                alert(
+                    "Message failed to send.\n\n" +
+                    "Please check the browser console (F12) for the error."
+                );
 
             });
 

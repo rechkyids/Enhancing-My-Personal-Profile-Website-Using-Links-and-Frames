@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact Me</title>
+
+    <!-- EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script>
         emailjs.init({
-            publicKey: "JOAhhzTFHn4xpJcpW"
+            publicKey: "egjOQc-7p4HJyyZBq"
         });
     </script>
 </head>
@@ -30,6 +32,8 @@
     <hr>
 
     <form id="contact-form">
+
+        <!-- Name -->
         <label for="name">Full Name:</label>
         <input
             type="text"
@@ -40,6 +44,8 @@
         >
 
         <br><br>
+
+        <!-- Email -->
         <label for="email">Gmail:</label>
         <input
             type="email"
@@ -50,17 +56,29 @@
         >
 
         <br><br>
+
+        <!-- Gender -->
         <label>Gender:</label>
         <br>
 
         <input type="radio" id="male" name="gender" value="Male" required>
         <label for="male">Male</label>
+
         <input type="radio" id="female" name="gender" value="Female">
         <label for="female">Female</label>
+
+        <input type="radio" id="gay" name="gender" value="Gay">
+        <label for="gay">Gay</label>
+
+        <input type="radio" id="lesbian" name="gender" value="Lesbian">
+        <label for="lesbian">Lesbian</label>
+
         <input type="radio" id="other" name="gender" value="Other">
         <label for="other">Other</label>
 
         <br><br>
+
+        <!-- Strand -->
         <label for="strand">Strand:</label>
 
         <select id="strand" name="strand" required>
@@ -73,6 +91,8 @@
         </select>
 
         <br><br>
+
+        <!-- Message -->
         <label for="message">Message:</label>
         <br>
 
@@ -100,8 +120,8 @@
             event.preventDefault();
 
             emailjs.sendForm(
-                "service_817n0cf",
-                "template_k76duak",
+                "service_dllkglf",
+                "template_oe5a6f3",
                 form
             )
             .then(function(response) {
@@ -126,5 +146,7 @@
 
         });
     </script>
+
 </body>
+
 </html>

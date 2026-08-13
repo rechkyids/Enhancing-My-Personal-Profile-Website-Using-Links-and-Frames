@@ -9,12 +9,17 @@
 
     <!-- EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script>
-        emailjs.init({
-            publicKey: "egjOQc-7p4HJyyZBq"
-        });
     </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "JOAhhzTFHn4xpJcpW",
+      });
+   })();
+</script>
 </head>
 
 <body>
@@ -22,11 +27,12 @@
     <h1>Contact Me</h1>
 
     <nav>
-        <a href="About me.html">About me</a> |
-        <a href="Hobbies.html">My hobbies</a> |
-        <a href="Goals.html">My goals</a> |
-        <a href="Favorites.html">My Favorites</a> |
-        <a href="contact.html">Contact Me</a>
+         <a href="index.html">Home</a> |
+        <a href="about.html">About Me</a> |
+        <a href="hobbies.html">Hobbies</a> |
+        <a href="favorites.html">Favorites</a> |
+        <a href="goals.html">Goals</a> |
+        <a href="contact.html">Contact Me</a> |
     </nav>
 
     <hr>
@@ -120,8 +126,8 @@
             event.preventDefault();
 
             emailjs.sendForm(
-                "service_dllkglf",
-                "template_oe5a6f3",
+                "service_817n0cf",
+                "template_mi05pol",
                 form
             )
             .then(function(response) {

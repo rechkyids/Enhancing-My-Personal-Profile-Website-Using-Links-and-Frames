@@ -1,3 +1,6 @@
 body {font-family: Arial, sans-serif;
     background-color: #fff0f5;}
 h1 {text-align: center;}
+.nav-link {text-decoration: none; margin: 5px;}
+.section {padding: 20px;}
+.btn {padding: 10px 20px; border-radius: 8px;}

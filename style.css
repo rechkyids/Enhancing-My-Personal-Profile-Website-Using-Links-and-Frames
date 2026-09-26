@@ -1,22 +1,40 @@
 body {font-family: Arial, sans-serif;
     background-color: #fff0f5;}
 h1 {text-align: center;}
-.nav-link {text-decoration: none; margin: 5px;}
-.section {padding: 20px;}
+.nav-link {text-decoration: none; margin: 5px; font-weight: bold; letter-spacing: 1px;}
+.section {padding: 20px; 
+          background: linear-gradient (to right, #fff0f5, #ffc0cb);
+         opacity: 0.95;}
 .btn {padding: 10px 20px; border-radius: 8px;}
 .primary {background-color: #ffb6c1; border: none; cursor: pointer;}
-#contact-form {padding: 20px; margin: 20px;}
-#message {border-radius: 8px; padding: 10px;}
+#contact-form {padding: 20px; 
+               margin: 20px;
+              backgroun-color: white;
+              font-family: Arial, sans-serif;}
+#message {border-radius: 8px; 
+          padding: 10px;
+         font-family: Arial, sans-serif;
+         font-size: 16px;
+         line-height: 1.5;}
 
 h1 {text-align: center;  
     font-family: Georgia, serif;   
     font-size: 36px;   
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px;}
+    letter-spacing: 2px;
+   color: #d63384;}
 
 p {font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
   color: #333333;}
+
+h2 {text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1px;}
+
+
+
+

@@ -1,70 +1,382 @@
-body {font-family: Arial, sans-serif;
-    background-color: #fff0f5;}
-h1 {text-align: center;}
-.nav-link {text-decoration: none; margin: 5px; font-weight: bold; letter-spacing: 1px;}
-.section {padding: 20px;
-          margin: 20px; 
-          border: 20px solid #ffb6c1;
-          background: linear-gradient (to right, #fff0f5, #ffc0cb);
-         opacity: 0.95;}
-.btn {padding: 10px 20px; border-radius: 8px;}
-.primary {background-color: #ffb6c1; border: none; cursor: pointer;}
-#contact-form {width: 80%;
-               padding: 20px; 
-               margin: 20px;
-               border: 2px solid #ffb6c1;
-              backgroun-color: white;
-              font-family: Arial, sans-serif;}
-#message {border-radius: 8px; 
-          padding: 10px;
-         font-family: Arial, sans-serif;
-         font-size: 16px;
-         line-height: 1.5;}
+/* =========================
+   🌸 MY PERSONAL WEBSITE
+   ========================= */
 
-h1 {text-align: center;  
-    font-family: Georgia, serif;   
-    font-size: 36px;   
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+    color: #333333;
+}
+
+/* =========================
+   🎀 MAIN HEADINGS
+   ========================= */
+
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 38px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-   color: #d63384;
-   position: relative;
-   top: 5px;}
+    color: #d63384;
+    position: relative;
+    top: 5px;
+    margin: 30px 10px 20px;
+    text-shadow: 2px 2px 5px rgba(214, 51, 132, 0.15);
+}
 
-p {font-family: Arial, sans-serif;
+h2 {
+    color: #c2185b;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ffb6c1;
+}
+
+p {
+    font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
-  color: #333333;}
+    color: #333333;
+}
 
-h2 {text-transform: capitalize;
+/* =========================
+   🌷 NAVIGATION
+   ========================= */
+
+nav {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 25px;
+    padding: 15px;
+    text-align: center;
+    background: white;
+    border: 2px solid #ffb6c1;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.15);
+}
+
+.nav-link {
+    text-decoration: none;
+    margin: 5px;
+    padding: 8px 10px;
     font-weight: bold;
-    letter-spacing: 1px;}
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
 
-ul {list-style-type: square;
-    padding-left: 30px;}
+/* Link states */
+a:link {
+    color: #d63384;
+}
 
-ol {list-style-type: upper-alpha;
-    padding-left: 30px;}
+a:visited {
+    color: #9c276b;
+}
 
-a:link {color: #d63384;}
-a:visited {color: purple;}
-a:hover {color: red;
-         text-decoration: underine;}
-a:active {color: orange;}
+a:hover {
+    color: #ff4f9a;
+    text-decoration: underline;
+}
 
-.profile-img {float: left; 
-             margin-right: 20px;
-             position: relative; 
-             z-index: 1;}
-.footer {clear: both;
-        text-align; center;
-        padding: 15px;
-        margin-top: 20px;}
+a:active {
+    color: #ff9800;
+}
 
-nav ul {ist-stlye-type: none;
-        padding: 0;
-        margin: 0;}
+.nav-link:hover {
+    background-color: #ffe0eb;
+    border-radius: 10px;
+    text-decoration: none;
+}
 
+/* =========================
+   📦 GENERAL CONTENT
+   ========================= */
 
+body > h2,
+body > p,
+body > ol,
+body > ul,
+body > table,
+body > audio,
+body > video,
+body > iframe {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.section {
+    width: 90%;
+    max-width: 1000px;
+    padding: 25px;
+    margin: 25px auto;
+    border: 2px solid #ffb6c1;
+    border-radius: 20px;
+    background: linear-gradient(to right, #fff0f5, #ffc0cb);
+    opacity: 0.98;
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.12);
+}
+
+/* =========================
+   🖼️ PROFILE IMAGE
+   ========================= */
+
+.profile-img {
+    float: left;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px 25px 15px 0;
+    padding: 6px;
+    background-color: white;
+    border: 3px solid #ffb6c1;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.2);
+}
+
+/* =========================
+   📋 LISTS
+   ========================= */
+
+ul {
+    list-style-type: square;
+    padding-left: 45px;
+    line-height: 1.8;
+}
+
+ol {
+    list-style-type: upper-alpha;
+    padding-left: 45px;
+    line-height: 1.8;
+}
+
+/* Keep your required Roman numeral list */
+ol[type="I"] {
+    list-style-type: upper-roman;
+}
+
+/* Keep your educational goals starting at 5 */
+ol[start="5"] {
+    list-style-type: decimal;
+}
+
+/* =========================
+   📊 TABLES
+   ========================= */
+
+table {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.12);
+}
+
+th {
+    background-color: #ffb6c1;
+    color: #6b1740;
+    padding: 14px;
+    font-size: 17px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #f3b6c9;
+}
+
+tr:hover {
+    background-color: #fff0f5;
+}
+
+/* =========================
+   🎥 VIDEO + 🎵 AUDIO
+   ========================= */
+
+video {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+    border: 4px solid #ffb6c1;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.2);
+}
+
+audio {
+    display: block;
+    margin: 20px auto;
+}
+
+/* =========================
+   🗺️ MAP
+   ========================= */
+
+iframe {
+    display: block;
+    max-width: 90%;
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.15);
+}
+
+/* =========================
+   📩 CONTACT FORM
+   ========================= */
+
+#contact-form {
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    margin: 30px auto;
+    border: 2px solid #ffb6c1;
+    border-radius: 20px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 7px 20px rgba(214, 51, 132, 0.15);
+}
+
+#contact-form label {
+    font-weight: bold;
+    color: #9c276b;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 2px solid #ffc0cb;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #fffafd;
+}
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #d63384;
+    box-shadow: 0 0 6px rgba(214, 51, 132, 0.25);
+}
+
+#message {
+    border-radius: 10px;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* =========================
+   🎀 BUTTONS
+   ========================= */
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary {
+    background-color: #ffb6c1;
+    border: none;
+    color: #6b1740;
+}
+
+.primary:hover {
+    background-color: #d63384;
+    color: white;
+    transform: translateY(-2px);
+}
+
+button[type="reset"] {
+    padding: 12px 22px;
+    margin-left: 8px;
+    border: 2px solid #ffb6c1;
+    border-radius: 12px;
+    background-color: white;
+    cursor: pointer;
+}
+
+button[type="reset"]:hover {
+    background-color: #fff0f5;
+}
+
+/* =========================
+   🌸 FOOTER
+   ========================= */
+
+.footer {
+    clear: both;
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffb6c1;
+    color: #6b1740;
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    color: #6b1740;
+}
+
+/* =========================
+   📱 SMALL SCREEN
+   ========================= */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        width: 95%;
+        line-height: 2.5;
+    }
+
+    .profile-img {
+        float: none;
+        display: block;
+        margin: 15px auto;
+    }
+
+    body > h2,
+    body > p,
+    body > ol,
+    body > ul,
+    body > table {
+        width: 90%;
+    }
+
+    #contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+}

@@ -51,6 +51,8 @@ a:hover {color: red;
          text-decoration: underine;}
 a:active {color: orange;}
 
+.profile-img {float: left; margin-right: 20px;}
+.footer {clear: both;}
 
 
 

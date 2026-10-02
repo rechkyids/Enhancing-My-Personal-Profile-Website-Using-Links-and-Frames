@@ -9,8 +9,10 @@ h1 {text-align: center;}
          opacity: 0.95;}
 .btn {padding: 10px 20px; border-radius: 8px;}
 .primary {background-color: #ffb6c1; border: none; cursor: pointer;}
-#contact-form {padding: 20px; 
+#contact-form {width: 80%;
+               padding: 20px; 
                margin: 20px;
+               border: 2px solid #ffb6c1;
               backgroun-color: white;
               font-family: Arial, sans-serif;}
 #message {border-radius: 8px; 
@@ -55,7 +57,14 @@ a:active {color: orange;}
              margin-right: 20px;
              position: relative; 
              z-index: 1;}
-.footer {clear: both;}
+.footer {clear: both;
+        text-align; center;
+        padding: 15px;
+        margin-top: 20px;}
+
+nav ul {ist-stlye-type: none;
+        padding: 0;
+        margin: 0;}
 
 
 

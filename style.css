@@ -2,7 +2,9 @@ body {font-family: Arial, sans-serif;
     background-color: #fff0f5;}
 h1 {text-align: center;}
 .nav-link {text-decoration: none; margin: 5px; font-weight: bold; letter-spacing: 1px;}
-.section {padding: 20px; 
+.section {padding: 20px;
+          margin: 20px; 
+          border: 20px solid #ffb6c1;
           background: linear-gradient (to right, #fff0f5, #ffc0cb);
          opacity: 0.95;}
 .btn {padding: 10px 20px; border-radius: 8px;}
@@ -23,7 +25,9 @@ h1 {text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-   color: #d63384;}
+   color: #d63384;
+   position: relative;
+   top: 5px;}
 
 p {font-family: Arial, sans-serif;
     font-size: 18px;
@@ -34,6 +38,18 @@ p {font-family: Arial, sans-serif;
 h2 {text-transform: capitalize;
     font-weight: bold;
     letter-spacing: 1px;}
+
+ul {list-style-type: square;
+    padding-left: 30px;}
+
+ol {list-style-type: upper-alpha;
+    padding-left: 30px;}
+
+a:link {color: #d63384;}
+a:visited {color: purple;}
+a:hover {color: red;
+         text-decoration: underine;}
+a:active {color: orange;}
 
 
 

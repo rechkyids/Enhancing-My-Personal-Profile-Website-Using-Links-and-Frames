@@ -285,3 +285,8 @@ select:focus {
 .gallery-item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(214, 51, 132, 0.25);}   
+
+button:active,
+.page-buttons a:active,
+input[type="submit"]:active {
+    transform: scale(0.95);}

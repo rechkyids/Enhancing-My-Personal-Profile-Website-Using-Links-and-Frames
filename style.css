@@ -217,76 +217,187 @@ button[type="reset"]:hover {background-color: #fff0f5;}
     color: #6b1740;}
 
 @media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
 
-    h1 {font-size: 28px;}
+    nav {
+        width: 95%;
+        line-height: 2.5;
+    }
 
-    nav {width: 95%;
-        line-height: 2.5;}
-
-    .profile-img {float: none;
+    .profile-img {
+        float: none;
         display: block;
-        margin: 15px auto;}
+        margin: 15px auto;
+        max-width: 100%;
+    }
 
     body > h2,
     body > p,
     body > ol,
     body > ul,
-    body > table {width: 90%;}
+    body > table {
+        width: 90%;
+    }
 
-    #contact-form {width: 90%;
-        padding: 20px;}
+    #contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+}
 
-.profile-img {transition: transform 0.3s ease;}
+h1::before {
+    content: "♡ ";
+    color: #ff69b4;
+}
 
-.profile-img:hover {transform: scale(1.05);}   
+h1::after {
+    content: " ♡";
+    color: #ff69b4;
+}
 
-.nav-link {text-decoration: none; transition: color 0.3s ease;}
+.profile-img {
+    transition: transform 0.3s ease;
+}
 
-.nav-link:hover {color: #ff1493; text-decoration: underline;}
-    
-h1::before {content: "♡ ";
-    color: #ff69b4;}
+.profile-img:hover {
+    transform: scale(1.05);
+}
 
-h1::after {content: " ♡";
-    color: #ff69b4;}
+.nav-link {
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff1493;
+    background-color: #ffe0eb;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.nav-link:active {
+    color: #ff9800;
+}
 
 input:focus,
 textarea:focus,
 select:focus {
     outline: 2px solid #ff69b4;
     border-color: #ff1493;
-    background-color: #fff5fa;}
+    background-color: #fff5fa;
+}
+
+.hobby-intro {
+    text-align: center;
+    color: #8b4565;
+}
+
+.hobby-list li {
+    padding: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hobby-list li:hover {
+    color: #d63384;
+    transform: translateX(8px);
+}
 
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;}
+    align-items: stretch;
+    gap: 22px;
+    padding: 20px 5px;
+}
 
 .gallery-item {
     width: 220px;
-    padding: 10px;
-    background-color: white;
-    border: 2px solid pink;
-    border-radius: 12px;
+    max-width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    border: 2px solid #ffb6c1;
+    border-radius: 18px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+    box-shadow: 0 4px 10px rgba(214, 51, 132, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 .gallery-item img {
+    display: block;
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 8px;}    
-
- .gallery-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;}
+    transition: transform 0.4s ease;
+}
 
 .gallery-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(214, 51, 132, 0.25);}   
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(214, 51, 132, 0.25);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+.gallery-caption {
+    padding: 8px 12px 14px;
+}
+
+.gallery-caption h3 {
+    color: #c2185b;
+    margin-bottom: 5px;
+}
+
+.gallery-caption p {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 15px 0;
+}
+
+.video-item {
+    flex: 1 1 280px;
+    max-width: 450px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 2px solid #ffb6c1;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(214, 51, 132, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item video {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 3px solid #ffc0cb;
+    border-radius: 12px;
+}
+
+.video-item h3 {
+    color: #c2185b;
+    text-align: center;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(214, 51, 132, 0.2);
+}
 
 button:active,
 .page-buttons a:active,
 input[type="submit"]:active {
-    transform: scale(0.95);}
+    transform: scale(0.95);
+}

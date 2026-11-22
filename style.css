@@ -910,3 +910,39 @@ p {
         max-width: 100%;
     }
 }
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+/* RESPONSIVE AUDIO */
+audio {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    video {
+        max-width: 100%;
+    }
+
+    audio {
+        max-width: 100%;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+    video,
+    audio {
+        width: 100%;
+    }
+}

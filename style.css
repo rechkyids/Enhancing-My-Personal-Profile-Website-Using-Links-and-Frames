@@ -705,3 +705,106 @@ img {
         object-fit: cover;
     }
 }
+
+/* Contact form container */
+#contact-form {
+    width: 90%;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Form labels */
+#contact-form > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Text fields and dropdowns */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+/* Message box */
+#contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Radio buttons and checkboxes */
+#contact-form input[type="radio"],
+#contact-form input[type="checkbox"] {
+    width: auto;
+    margin: 8px 5px;
+    accent-color: #8e44ad;
+}
+
+/* Form buttons */
+#contact-form button {
+    padding: 12px 20px;
+    margin: 8px 5px 0 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Send button */
+#contact-form button[type="submit"] {
+    background-color: #8e44ad;
+    color: white;
+}
+
+/* Clear button */
+#contact-form button[type="reset"] {
+    background-color: #dddddd;
+    color: #333333;
+}
+
+/* Button hover */
+#contact-form button:hover {
+    opacity: 0.85;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    #contact-form {
+        width: 95%;
+        padding: 22px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    #contact-form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form select,
+    #contact-form textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #contact-form button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}

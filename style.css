@@ -1034,3 +1034,35 @@ audio {
         max-width: 350px;
     }
 }
+#contact-form {
+    box-sizing: border-box;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+#contact-form textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+#contact-form input[type="radio"],
+#contact-form input[type="checkbox"] {
+    width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    #contact-form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #contact-form button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
